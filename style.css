@@ -10,13 +10,69 @@
 .jumbotron {
   background-color: #66BA9E;
   margin-top: 30px;
+  color: white;
+  padding: 40px 15px;
 }
 
 .jumbotron img {
   height: 200px;
-  display: inline-block;
 }
 
-.jumbotron h1 {
-  color: white;
+.jumbotron h1,p{
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.separatore {
+    width: 250px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.separatore::before,
+.separatore::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc((100% - 60px) / 2);
+    height: 3px;
+    background-color: white;
+}
+
+.separatore::before {
+    left: 0;
+}
+
+.separatore::after {
+    right: 0;
+}
+
+#portafolio{
+    color: #2c3e50;
+    margin-bottom: 30px;
+    padding: 30px 15px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.img-thumbnail{
+    padding: 10px 4px;
+    border: 0;
+}
+
+.effetto:hover {
+    background-color:rgba(26,188,156,.9);
+    width: 100%;
+    height: 254px;
+}
+
+#about{
+    background-color: #1abc9c;
+    padding: 30px 15px;
+    color: white;
 }
